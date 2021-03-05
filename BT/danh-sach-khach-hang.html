@@ -2,9 +2,93 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Danh sách khách hàng</title>
 </head>
-<body>
+<style>
+    td{
+        width: 200px;
+        height: 50px;
+        padding-left: 5px;
+    }
 
+    .stt{
+        width: 20px;
+    }
+
+    .header-color{
+        background-color: lightpink;
+    }
+
+    #id-stt{
+        background-color: yellow;
+    }
+
+    form{
+        width: 200px;
+    }
+    input{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+<!--Tao table-->
+<table border="1px solid black" cellspacing="0">
+    <tr>
+        <th id="id-stt" class="stt header-color">STT</th>
+        <th class="header-color">Họ và Tên</th>
+        <th class="header-color">Năm Sinh</th>
+        <th class="header-color">Địa chỉ</th>
+    </tr>
+    <tr>
+        <td class="stt">1</td>
+        <td>Tạ Minh Tuấn</td>
+        <td>1989</td>
+        <td>Việt Trì</td>
+    </tr>
+    <tr>
+        <td class="stt">2</td>
+        <td>Phạm Văn Trọng</td>
+        <td>2001</td>
+        <td>Lào Cai</td>
+    </tr>
+    <tr>
+        <td class="stt">3</td>
+        <td>Duy Trần</td>
+        <td>2002</td>
+        <td>Việt Trì</td>
+    </tr>
+    <tr>
+        <td class="stt">4</td>
+        <td>Đoàn Quân</td>
+        <td>1998</td>
+        <td>Việt Trì</td>
+    </tr>
+    <tr>
+        <td class="stt">5</td>
+        <td>Lộc Khôi</td>
+        <td>1995</td>
+        <td>Lạng Sơn</td>
+    </tr>
+</table>
+
+<!--Tạo form-->
+<form>
+    <fieldset>
+        <legend>Login</legend>
+        Username: <input type="text">
+        Password: <input type="password">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br>
+        <input type="checkbox" name="hobby"> Du lịch
+        <br>
+        <input type="checkbox" name="hobby"> Game
+        <br>
+        <input type="checkbox" name="hobby"> Đọc sách
+        <br>
+        <button>Submit</button>
+        <button>Cancel</button>
+    </fieldset>
+</form>
 </body>
 </html>
